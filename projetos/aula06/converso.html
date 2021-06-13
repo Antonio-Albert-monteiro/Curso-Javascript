@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>converso</title>
+				<style>
+								body {
+												background-color: #7f98ff;
+												color: #000000;
+												font: normal 19px Arial;
+								}
+				</style>
+</head>
+<body>
+				<h3>ola mundo</h3>
+				<script>
+								var valor = Number(prompt("valor a ser convertido"))
+								valor = valor.toLocaleString('pt-br', {"style": "currency", "currency": "BRL"});
+								alert(valor)
+				</script>
+</body>
+</html>
