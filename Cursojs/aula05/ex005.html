@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Primeiros passos com DOM</title>
+				<style>
+								body {
+												background: rgb(68, 125, 199);
+												color: white;
+												font: normal 13pt sans-serif;
+								}
+				</style>
+</head>
+<body>
+				<h1>Iniciando estudos com DOM</h1>
+				<p>aqui vai os resultados</p>
+				<p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+				<div id="msg">Clique em mim</div>
+				<div name="msg">lorem Ipaumirim</div>
+				<div class="msg">magnis phasellu</div>
+				<div id="oi">jsjskskskksksksm</div>
+				
+				<script>
+								var p = window.document.getElementsByTagName('p')[1]
+								window.document.write("Está escrito assim: " + p.innerHTML)
+								p.style.color = "blue"
+								
+								/*
+								var d = window.document.getElementById("msg)
+								d.innerText = "ola"
+								*/
+								
+								/*
+								var d2 = window.document.getElementsByName("msg")[0]
+								d2.innerText = "Olá, mundo!"
+								*/
+								
+								/*
+								var d3 = window.document.getElementsByClassName("msg")[0]
+								d3.innerText = "Seja bem vinda"
+								*/
+								
+								var d4 = window.document.querySelector("div#oi")
+								d4.style.background = "green"
+				</script>
+</body>
+</html>
